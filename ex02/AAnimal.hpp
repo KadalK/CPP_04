@@ -4,14 +4,14 @@
 
 class AAnimal {
 protected:
-	std::string _name;
+	std::string _type;
 public:
 	AAnimal();
-	AAnimal(std::string& name);
+	AAnimal(std::string&);
 	AAnimal(const AAnimal&);
 	AAnimal& operator=(const AAnimal&);
 	virtual ~AAnimal();
-	std::string getType(void) const;
+	virtual std::string getType(void) const = 0;
 	virtual void makeSound() const = 0;
 };
 

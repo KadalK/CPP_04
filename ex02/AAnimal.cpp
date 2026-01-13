@@ -20,10 +20,6 @@ std::string AAnimal::getType() const {
 	return (this->_type);
 }
 
-void AAnimal::makeSound() const {
-	std::cout << "caca" << std::endl;
-}
-
 AAnimal::~AAnimal() {
 	std::cout << "DestructorAAnimal Called" << std::endl;
 }

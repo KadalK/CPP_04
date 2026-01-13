@@ -12,7 +12,7 @@ public:
 	WrongAnimal(const WrongAnimal& );
 	WrongAnimal& operator=(const WrongAnimal&);
 	~WrongAnimal();
-	virtual void makeSound() const = 0;
+	 void makeSound();
 };
 
 #endif
