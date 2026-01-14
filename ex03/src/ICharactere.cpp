@@ -1,4 +1,4 @@
-#include "ICharactere.hpp"
+#include "../inc/ICharactere.hpp"
 
 ICharactere::ICharactere() {}
 
