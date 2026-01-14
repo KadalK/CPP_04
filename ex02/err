@@ -1,0 +1,39 @@
+WrongDog.cpp:5:8: error: no member named '_type' in 'WrongDog'
+        this->_type = "WrongDog";
+        ~~~~  ^
+WrongDog.cpp:12:8: error: no member named '_type' in 'WrongDog'
+        this->_type = "WrongDog";
+        ~~~~  ^
+WrongDog.cpp:13:8: error: no member named '_type' in 'WrongDog'
+        this->_type = obj._type;
+        ~~~~  ^
+WrongDog.cpp:13:20: error: no member named '_type' in 'WrongDog'
+        this->_type = obj._type;
+                      ~~~ ^
+WrongDog.cpp:18:9: error: no member named '_type' in 'WrongDog'
+                this->_type = rhs._type;
+                ~~~~  ^
+WrongDog.cpp:18:21: error: no member named '_type' in 'WrongDog'
+                this->_type = rhs._type;
+                              ~~~ ^
+6 errors generated.
+WrongCat.cpp:6:8: error: no member named '_type' in 'WrongCat'
+        this->_type = "WrongCat";
+        ~~~~  ^
+WrongCat.cpp:13:8: error: no member named '_type' in 'WrongCat'
+        this->_type = "WrongCat";
+        ~~~~  ^
+WrongCat.cpp:14:8: error: no member named '_type' in 'WrongCat'
+        this->_type = obj._type;
+        ~~~~  ^
+WrongCat.cpp:14:20: error: no member named '_type' in 'WrongCat'
+        this->_type = obj._type;
+                      ~~~ ^
+WrongCat.cpp:19:9: error: no member named '_type' in 'WrongCat'
+                this->_type = rhs._type;
+                ~~~~  ^
+WrongCat.cpp:19:21: error: no member named '_type' in 'WrongCat'
+                this->_type = rhs._type;
+                              ~~~ ^
+6 errors generated.
+make: *** [Makefile:9: AAnimal] Error 1

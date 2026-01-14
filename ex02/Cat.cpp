@@ -1,17 +1,12 @@
 #include "Cat.hpp"
 #include "AAnimal.hpp"
 
-Cat::Cat() : AAnimal() {
-	this->_type = "Cat";
+Cat::Cat() : AAnimal("Cat") , _brain(new Brain) {
 	std::cout << "Constructor Cat Called" << std::endl;
 }
 
-Cat::Cat(const std::string& name) : AAnimal("Cat") {}
-
-Cat::Cat(const Cat& obj) {
-	this->_brain = new Brain;
-	this->_brain = obj._brain;
-	this->_type = obj._type;
+Cat::Cat(const Cat& obj) : AAnimal("Cat") , _brain(new Brain) {
+	*this = obj;
 }
 
 Cat& Cat::operator=(const Cat& rhs){
@@ -28,5 +23,6 @@ void Cat::makeSound() const {
 }
 
 Cat::~Cat() {
+	delete this->_brain;
 	std::cout << "Destructor Cat Called" << std::endl;
 }

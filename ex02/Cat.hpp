@@ -9,11 +9,10 @@ private:
 	Brain* _brain;
 public:
 	Cat();
-	Cat(const Cat& );
-	Cat(std::string& name);
+	Cat(const Cat&);
 	Cat& operator=(const Cat&);
-	virtual void makeSound() const;
-	virtual ~Cat();
+	void makeSound() const;
+	~Cat();
 };
 
 #endif

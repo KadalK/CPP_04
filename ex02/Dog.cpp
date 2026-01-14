@@ -2,11 +2,10 @@
 #include "AAnimal.hpp"
 
 Dog::Dog() {
+	//put brain
 	this->_type = "Dog";
 	std::cout << "Constructor Dog Called" << std::endl;
 }
-
-Dog::Dog(std::string& name) : AAnimal(name) {}
 
 Dog::Dog(const Dog& obj) {
 	this->_brain = new Brain;
@@ -25,5 +24,6 @@ void Dog::makeSound() const {
 }
 
 Dog::~Dog() {
+	//delete brain
 	std::cout << "Destructor Dog Called" << std::endl;
 }

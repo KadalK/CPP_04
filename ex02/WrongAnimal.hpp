@@ -3,16 +3,16 @@
 #include <iostream>
 #include "AAnimal.hpp"
 
-class WrongAnimal : public AAnimal {
-private:
+class WrongAnimal {
+protected:
 	std::string _name;
 public:
 	WrongAnimal();
 	WrongAnimal(std::string& name);
 	WrongAnimal(const WrongAnimal& );
 	WrongAnimal& operator=(const WrongAnimal&);
-	~WrongAnimal();
-	 void makeSound();
+	virtual ~WrongAnimal();
+	virtual void makeSound() const;
 };
 
 #endif

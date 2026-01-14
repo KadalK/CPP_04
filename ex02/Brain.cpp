@@ -3,12 +3,15 @@
 Brain::Brain() {}
 
 Brain::Brain(const Brain& obj){
-	this->_ideas[99] = obj._ideas[99];
+	*this = obj;
 }
 
 Brain& Brain::operator=(const Brain& rhs) {
 	if (this != &rhs)
-		this->_ideas[99] = rhs._ideas[99];
+	{
+		for (int i = 0; i < 100; i++)
+			this->_ideas[i] = rhs._ideas[i];
+	}
 	return(*this);
 }
 
