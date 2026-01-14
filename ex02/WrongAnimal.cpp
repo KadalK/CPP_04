@@ -4,15 +4,15 @@ WrongAnimal::WrongAnimal() {
 	std::cout << "Constructor WrongAnimal Called" << std::endl;
 }
 
-WrongAnimal::WrongAnimal(std::string& name) : _name(name) {}
+WrongAnimal::WrongAnimal(const std::string& name) : _type(name) {}
 
 WrongAnimal::WrongAnimal(const WrongAnimal& obj) {
-	this->_name = obj._name;
+	this->_type = obj._type;
 }
 
 WrongAnimal& WrongAnimal::operator=(const WrongAnimal& rhs){
 	if (this != &rhs)
-		this->_name = rhs._name;
+		this->_type = rhs._type;
 	return *this;
 }
 

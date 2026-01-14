@@ -2,8 +2,7 @@
 #include "WrongAnimal.hpp"
 
 
-WrongCat::WrongCat() {
-	this->_type = "WrongCat";
+WrongCat::WrongCat() : WrongAnimal("WrongCat") {
 	std::cout << "Constructor WrongCat Called" << std::endl;
 }
 
@@ -21,7 +20,7 @@ WrongCat& WrongCat::operator=(const WrongCat rhs){
 }
 
 void WrongCat::makeSound() const {
-	std::cout << "I WILL DESTROY UR WORLD." << std::endl;
+	std::cout << "Wrong cat song, spoiler u will never hear that" << std::endl;
 }
 
 WrongCat::~WrongCat() {

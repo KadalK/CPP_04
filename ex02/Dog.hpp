@@ -10,7 +10,6 @@ private:
 public:
 	Dog();
 	Dog(const Dog& );
-	Dog(std::string& name);
 	Dog& operator=(const Dog&);
 	void makeSound() const;
 	~Dog();

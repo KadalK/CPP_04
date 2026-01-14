@@ -17,5 +17,9 @@ int main()
 	j->makeSound();
 	wi->makeSound();
 	wj->makeSound();
+	delete i;
+	delete j;
+	delete wi;
+	delete wj;
 	return 0;
 }

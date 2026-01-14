@@ -1,15 +1,12 @@
 #include "WrongDog.hpp"
 #include "WrongAnimal.hpp"
 
-WrongDog::WrongDog() {
-	this->_type = "WrongDog";
+WrongDog::WrongDog() : WrongAnimal("WrongDog") {
 	std::cout << "Constructor WrongDog Called" << std::endl;
 }
 
-WrongDog::WrongDog(std::string name) : WrongAnimal(name) {}
 
 WrongDog::WrongDog(const WrongDog& obj) {
-	this->_type = "WrongDog";
 	this->_type = obj._type;
 }
 
@@ -20,7 +17,7 @@ WrongDog& WrongDog::operator=(const WrongDog rhs){
 }
 
 void WrongDog::makeSound() const {
-	std::cout << "*Motor noise*" << std::endl;
+	std::cout << "Wrong dog song, spoiler u will never hear that" << std::endl;
 }
 
 WrongDog::~WrongDog() {

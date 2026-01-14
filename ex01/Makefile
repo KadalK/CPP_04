@@ -2,8 +2,8 @@ NAME = Animal
 CPP= c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -g3
 
-SRCS = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp Brain.cpp WrongDog.cpp WrongCat.cpp
-INCS = Animal.hpp Dog.hpp Cat.hpp WrongAnimal.hpp Brain.hpp WrongDog.hpp WrongCat.hpp
+SRCS = main.cpp Animal.cpp Dog.cpp Cat.cpp Brain.cpp WrongAnimal.cpp  WrongDog.cpp WrongCat.cpp
+INCS = Animal.hpp Dog.hpp Cat.hpp  Brain.hpp WrongAnimal.hpp WrongDog.hpp WrongCat.hpp
 
 $(NAME): $(SRCS) $(INCS) Makefile
 	$(CPP) $(CFLAGS) $(SRCS) -o $(NAME)

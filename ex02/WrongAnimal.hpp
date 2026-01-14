@@ -5,14 +5,14 @@
 
 class WrongAnimal {
 protected:
-	std::string _name;
+	std::string _type;
 public:
 	WrongAnimal();
-	WrongAnimal(std::string& name);
+	WrongAnimal(const std::string& );
 	WrongAnimal(const WrongAnimal& );
-	WrongAnimal& operator=(const WrongAnimal&);
+	WrongAnimal& operator=(const WrongAnimal& );
+	void makeSound() const;
 	virtual ~WrongAnimal();
-	virtual void makeSound() const;
 };
 
 #endif
