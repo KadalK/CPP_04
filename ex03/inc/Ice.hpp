@@ -1,17 +1,17 @@
-#ifdef Cure_hpp
-#define Cure_hpp
+#ifdef ICE_HPP
+#define ICE_HPP
 #include "AMateria.hpp"
 
-class Cure : public AMateria {
+class Ice : public AMateria {
 private:
 
 public:
-	Cure();
-	Cure(const Cure&);
+	Ice();
+	Ice(const Ice&);
 	AMateria* clone() const;
-	Cure& operator=(const Cure&);
+	Ice& operator=(const Ice&);
 	void use(ICharacter& target);
-	~Cure();
+	~Ice();
 };
 
 #endif

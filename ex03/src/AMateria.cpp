@@ -1,14 +1,11 @@
 #include "AMateria.hpp"
 #include "IMateria.hpp"
 
-AMateria::AMateria() : IMateria() {}
+AMateria::AMateria(const AMateria &copy)  : _type(copy._type) {}
 
-AMateria::AMateria(const AMateria& copy)
-{
-	*this = copy;
-}
+AMateria::AMateria(std::string& const type) : _type(type) {}
 
-AMateria&	operator=(const AMateria &rhs)
+AMateria&	AMateria::operator=(const AMateria &rhs)
 {
 	if (this != &rhs)
 		this->_type = rhs._type;
@@ -16,8 +13,7 @@ AMateria&	operator=(const AMateria &rhs)
 }
 
 
-std::string const&	AMateria::getAMateria() const
-{
+std::string const&	AMateria::getType() const {
 	return (this->_type);
 }
 

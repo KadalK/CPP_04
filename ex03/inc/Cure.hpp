@@ -1,7 +1,16 @@
-#include "Cure.hpp"
+#ifndef CURE_HPP
+#define CURE_HPP
+#include "AMateria.hpp"
 
 
-Cure::Cure() {};
+class Cure : public AMateria {
+public:
+	Cure();
+	Cure(const Cure&);
+	AMateria* clone() const;
+	Cure& operator=(const Cure&);
+	void use(ICharacter& target);
+	~Cure();
+};
 
-
-Cure::~Cure() {};
+#endif

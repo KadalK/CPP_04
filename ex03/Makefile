@@ -14,7 +14,7 @@ INCLUDES		= -I $(INCLUDE_DIR)
 
 #-------------------------------- SOURCE FILES -------------------------------#
 
-SRCS		:=	AMateria.cpp Cure.cpp Ice.cpp ICharactere.cpp main.cpp
+SRCS		:=	AMateria.cpp Cure.cpp Ice.cpp ICharacter.cpp main.cpp
 SRCS		:=	$(addprefix $(SRC_DIR)/,$(SRCS))
 
 
