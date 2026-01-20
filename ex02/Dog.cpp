@@ -9,11 +9,11 @@ Dog::Dog(const Dog& obj) : AAnimal("Dog"), _brain(new Brain) {
 	*this = obj;
 }
 
-Dog& Dog::operator=(const Dog& rhs){
+Dog& Dog::operator=(const Dog& rhs){ //deep copy
 	if (this != &rhs)
 	{
-		this->_brain = rhs._brain;
-		this->_type = rhs._type;
+		this->_brain = new Brain(*rhs._brain);
+		this->_type =  rhs._type;
 	}
 	return *this;
 }
@@ -21,6 +21,7 @@ Dog& Dog::operator=(const Dog& rhs){
 void Dog::makeSound() const {
 	std::cout << "Woof~ Snoop Doogy Doug" << std::endl;
 }
+
 
 Dog::~Dog() {
 	delete this->_brain;

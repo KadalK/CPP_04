@@ -7,6 +7,8 @@
 class IMateriaSource;
 
 class MateriaSource : public IMateriaSource {
+private:
+	AMateria* _learned[4];
 public:
 	MateriaSource();
 	void learnMateria(AMateria*);

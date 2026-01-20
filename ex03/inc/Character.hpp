@@ -16,8 +16,10 @@ public:
 	std::string const & getName() const;
 	void equip(AMateria* m);
 	void unequip(int idx);
-	void use(int idx, ICharacter& target);
+	void use(int idx, ICharacter& );
 	virtual ~Character();
 };
+
+//std::ostream& operator<<(ostream& os, const Character& c);
 
 #endif

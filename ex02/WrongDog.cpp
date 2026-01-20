@@ -17,7 +17,7 @@ WrongDog& WrongDog::operator=(const WrongDog rhs){
 }
 
 void WrongDog::makeSound() const {
-	std::cout << "Wrong dog song, spoiler u will never hear that" << std::endl;
+	std::cout << "Wrong doge song" << std::endl;
 }
 
 WrongDog::~WrongDog() {

@@ -2,10 +2,10 @@
 #include "AMateria.hpp"
 
 
-Cure::Cure() : AMateria("Cure"){}
+Cure::Cure() : AMateria("cure"){}
 
 
-Cure::Cure(const Cure& copy) : AMateria("Cure") {
+Cure::Cure(const Cure& copy) : AMateria("cure") {
 	*this = copy;
 }
 

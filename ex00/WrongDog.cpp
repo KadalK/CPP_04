@@ -5,7 +5,6 @@ WrongDog::WrongDog() : WrongAnimal("WrongDog") {
 	std::cout << "Constructor WrongDog Called" << std::endl;
 }
 
-
 WrongDog::WrongDog(const WrongDog& obj) {
 	this->_type = obj._type;
 }
@@ -17,7 +16,7 @@ WrongDog& WrongDog::operator=(const WrongDog rhs){
 }
 
 void WrongDog::makeSound() const {
-	std::cout << "Wrong dog song, spoiler u will never hear that" << std::endl;
+	std::cout << "Wrong dog song" << std::endl;
 }
 
 WrongDog::~WrongDog() {

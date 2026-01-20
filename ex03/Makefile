@@ -3,7 +3,6 @@
 NAME		:=	Materia
 CC			:=	c++
 CFLAGS		:=	-Wall -Wextra -Werror -std=c++98
-MAKEFLAGS	+=	-j $$(nproc)
 DEPS		:=	-MMD -MP
 
 INCLUDE_DIR	:=	inc
@@ -14,13 +13,19 @@ INCLUDES		= -I $(INCLUDE_DIR)
 
 #-------------------------------- SOURCE FILES -------------------------------#
 
-SRCS		:=	AMateria.cpp Cure.cpp Ice.cpp Character.cpp main.cpp MateriaSource.cpp
-SRCS		:=	$(addprefix $(SRC_DIR)/,$(SRCS))
+SRCS		:=	Ice.cpp	\
+				Character.cpp	\
+				main.cpp	\
+				MateriaSource.cpp	\
+				AMateria.cpp	\
+				Cure.cpp
+
+SRCS_PATH		:=	$(addprefix $(SRC_DIR)/,$(SRCS))
 
 
 #-------------------------------- OBJECTS ------------------------------------#
 
-OBJS			:=	$(patsubst $(SRC_DIR)/%.cpp,$(OBJ_DIR)/%.o,$(SRCS))
+OBJS			:=	$(patsubst $(SRC_DIR)/%.cpp,$(OBJ_DIR)/%.o,$(SRCS_PATH))
 DEPENDENCIES	=	$(OBJS:.o=.d)
 
 #-------------------------------- RULES --------------------------------------#
@@ -45,8 +50,8 @@ fclean: clean
 	rm -f $(NAME)
 
 
-re: fclean all
+re: clean all
 
 -include $(DEPENDENCIES)
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re make

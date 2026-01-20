@@ -3,9 +3,19 @@
 #include <cstddef>
 
 
-Character::Character() {}
+Character::Character() {
+	for(int i = 0 ; i < 4; i++)
+	{
+		this->_inventory[i] = NULL;
+	}
+}
 
-Character::Character(const std::string& name) : _name(name) {}
+Character::Character(const std::string& name) : _name(name) {
+	for(int i = 0 ; i < 4; i++)
+	{
+		this->_inventory[i] = NULL;
+	}
+}
 
 Character::Character(const Character& copy) {
 	for (int i = 0; i < 4; i++)
@@ -30,15 +40,18 @@ Character& Character::operator=(const Character& rhs) {
 
 void Character::equip(AMateria* m){
 
-	if (!m)
+	if (!m){
+		std::cout << "No materia to equip\n";
 		return ;
+	}
 
 	for (int i = 0; i < 4; i++)
 	{
-		if (_inventory[i] != NULL) //check
+		if (_inventory[i] == NULL) //check
 		{
 			_inventory[i] = m;
 			std::cout << "Materia equip in slot " << i << std::endl;
+			return ;
 		}
 	}
 	std::cout << "No more slot dispo !" << std::endl;
@@ -53,12 +66,13 @@ void Character::unequip(int idx)
 
 void Character::use(int idx, ICharacter& target)
 {
-	(void)idx;
-	(void)target;
-	std::cout << "use" << std::endl;
+	 this->_inventory[idx]->use(target);
 }
 
 Character::~Character() {
 	for(int i = 0; i < 4; i++)
-		delete _inventory[i];
+	{
+		if (_inventory[i] != NULL)
+			delete _inventory[i];
+	}
 }

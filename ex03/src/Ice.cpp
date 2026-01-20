@@ -1,10 +1,10 @@
 #include "AMateria.hpp"
 #include "Ice.hpp"
 
-Ice::Ice() : AMateria("Ice") {}
+Ice::Ice() : AMateria("ice") {}
 
 
-Ice::Ice(const Ice& copy) : AMateria("Ice") {
+Ice::Ice(const Ice& copy) : AMateria("ice") {
 	*this = copy;
 }
 
@@ -23,6 +23,7 @@ Ice& Ice::operator=(const Ice& rhs)
 
 void Ice::use(ICharacter& target)
 {
-	std::cout << "* shoots an ice bolt at* " << target.getName() << std::endl;
+	std::cout << "* shoots an ice bolt at bob at " << target.getName() << " *" << std::endl;
 }
+
 Ice::~Ice() {}

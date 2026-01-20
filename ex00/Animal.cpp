@@ -4,7 +4,7 @@ Animal::Animal() {
 	std::cout << "Constructor Animal Called" << std::endl;
 }
 
-Animal::Animal(std::string name) : _type(name) {}
+Animal::Animal(std::string& name) : _type(name) {}
 
 Animal::Animal(const  Animal& obj) {
 	this->_type = obj._type;

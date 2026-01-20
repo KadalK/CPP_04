@@ -20,7 +20,7 @@ WrongCat& WrongCat::operator=(const WrongCat rhs){
 }
 
 void WrongCat::makeSound() const {
-	std::cout << "Wrong cat song, spoiler u will never hear that" << std::endl;
+	std::cout << "Wrong cat song" << std::endl;
 }
 
 WrongCat::~WrongCat() {

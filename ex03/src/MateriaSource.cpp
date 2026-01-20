@@ -2,20 +2,39 @@
 #include "Cure.hpp"
 #include "Ice.hpp"
 
-MateriaSource::MateriaSource() {}
+MateriaSource::MateriaSource() {
+	for(int i = 0 ; i < 4; i++)
+		this->_learned[i] = NULL;
+}
 
 void MateriaSource::learnMateria(AMateria* learn)
 {
-	std::cout << "Learn" << std::endl;
+	for (int i = 0; i < 4 ; i++)
+	{
+		if (this->_learned[i] == NULL)
+		{
+			_learned[i] = learn;
+			std::cout << "U learned " << learn->getType() << std::endl;
+			return ;
+		}
+	}
+	std::cout << "U can't learn more !" << std::endl;
 }
 
 AMateria* MateriaSource::createMateria(std::string const & type)
 {
-	if (type == "Cure")
-		return new Cure();
-	else if (type == "Ice")
-		return new Ice();
+	for (int i = 0; i < 4; i++)
+	{
+		if (_learned[i] != NULL && type == _learned[i]->getType())
+			return (_learned[i]->clone());
+	}
 	return NULL;
 }
 
-MateriaSource::~MateriaSource() {}
+MateriaSource::~MateriaSource() {
+	for (int i = 0; i < 4; i++)
+	{
+		if (_learned[i] != NULL)
+			delete _learned[i];
+	}
+}

@@ -1,4 +1,5 @@
 #include "Brain.hpp"
+#include "AAnimal.hpp"
 
 Brain::Brain() {}
 
@@ -14,5 +15,6 @@ Brain& Brain::operator=(const Brain& rhs) {
 	}
 	return(*this);
 }
+
 
 Brain::~Brain() {}
