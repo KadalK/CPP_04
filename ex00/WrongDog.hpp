@@ -9,6 +9,7 @@ public:
 	WrongDog(const WrongDog& );
 	WrongDog& operator=(const WrongDog);
 	void makeSound() const;
+
 	~WrongDog();
 };
 

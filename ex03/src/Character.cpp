@@ -47,7 +47,7 @@ void Character::equip(AMateria* m){
 
 	for (int i = 0; i < 4; i++)
 	{
-		if (_inventory[i] == NULL) //check
+		if (_inventory[i] == NULL)
 		{
 			_inventory[i] = m;
 			std::cout << "Materia equip in slot " << i << std::endl;

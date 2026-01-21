@@ -10,7 +10,9 @@ public:
 	WrongAnimal(const std::string& );
 	WrongAnimal(const WrongAnimal& );
 	WrongAnimal& operator=(const WrongAnimal& );
+
 	void makeSound() const;
+
 	virtual ~WrongAnimal();
 };
 

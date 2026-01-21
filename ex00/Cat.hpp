@@ -7,10 +7,12 @@ class Cat : public Animal {
 public:
 	Cat();
 	Cat(const Cat& );
-	Cat(std::string name);
+	Cat(const std::string& name);
 	Cat& operator=(const Cat);
-	~Cat();
+
 	void makeSound() const;
+
+	~Cat();
 };
 
 #endif

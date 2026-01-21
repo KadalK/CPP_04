@@ -5,13 +5,13 @@ Cat::Cat() {
 	std::cout << "Constructor Cat Called" << std::endl;
 }
 
-Cat::Cat(std::string name) : Animal(name) {}
-
 Cat::Cat(const Cat& obj) {
-	this->_brain = new Brain(*obj._brain); //a corriger sur les autres
+	this->_brain = new Brain(*obj._brain);
 	this->_type = "Cat";
 	this->_type = obj._type;
 }
+
+Cat::Cat(const std::string& name) : Animal(name) {}
 
 Cat& Cat::operator=(const Cat rhs){
 	if (this != &rhs)

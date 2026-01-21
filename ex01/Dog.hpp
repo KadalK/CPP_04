@@ -10,10 +10,12 @@ private:
 public:
 	Dog();
 	Dog(const Dog& );
-	Dog(std::string name);
+	Dog(const std::string& name);
 	Dog& operator=(const Dog);
-	~Dog();
+
 	void makeSound() const;
+
+	~Dog();
 };
 
 #endif

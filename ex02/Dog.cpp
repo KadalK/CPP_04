@@ -9,9 +9,10 @@ Dog::Dog(const Dog& obj) : AAnimal("Dog"), _brain(new Brain) {
 	*this = obj;
 }
 
-Dog& Dog::operator=(const Dog& rhs){ //deep copy
+Dog& Dog::operator=(const Dog& rhs) {
 	if (this != &rhs)
 	{
+		delete this->_brain;
 		this->_brain = new Brain(*rhs._brain);
 		this->_type =  rhs._type;
 	}

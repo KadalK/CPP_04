@@ -12,6 +12,7 @@ Cat::Cat(const Cat& obj) : AAnimal("Cat") , _brain(new Brain) {
 Cat& Cat::operator=(const Cat& rhs){
 	if (this != &rhs)
 	{
+		delete this->_brain;
 		this->_brain =  new Brain(*rhs._brain);
 		this->_type = rhs._type;
 	}

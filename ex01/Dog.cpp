@@ -5,13 +5,13 @@ Dog::Dog() {
 	std::cout << "Constructor Dog Called" << std::endl;
 }
 
-Dog::Dog(std::string name) : Animal(name) {}
-
 Dog::Dog(const Dog& obj) {
-	this->_brain = new Brain;
+	this->_brain = new Brain(*obj._brain);
 	this->_type = "Dog";
 	this->_type = obj._type;
 }
+
+Dog::Dog(const std::string& name) : Animal(name) {}
 
 Dog& Dog::operator=(const Dog rhs){
 	if (this != &rhs)

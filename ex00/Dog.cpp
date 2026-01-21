@@ -1,11 +1,10 @@
 #include "Dog.hpp"
 
-Dog::Dog() {
-	this->_type = "Dog";
+Dog::Dog() : Animal("Dog"){;
 	std::cout << "Constructor Dog Called" << std::endl;
 }
 
-Dog::Dog(std::string name) : Animal(name) {}
+Dog::Dog(const std::string& name) : Animal(name) {}
 
 Dog::Dog(const Dog& obj) {
 	this->_type = "Dog";

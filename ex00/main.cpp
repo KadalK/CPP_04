@@ -11,8 +11,8 @@ int main()
 	const Animal* cat = new Cat();
 	std::cout << dog->getType() << " " << std::endl;
 	std::cout << cat->getType() << " " << std::endl;
-	dog->makeSound(); //will output the cat sound!
-	cat->makeSound();
+	cat->makeSound(); //will output the cat sound!
+	dog->makeSound();
 	meta->makeSound();
 	delete meta;
 	delete dog;

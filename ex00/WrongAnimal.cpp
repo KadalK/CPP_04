@@ -4,10 +4,13 @@ WrongAnimal::WrongAnimal() {
 	std::cout << "Constructor WrongAnimal Called" << std::endl;
 }
 
-WrongAnimal::WrongAnimal(const std::string& name) : _type(name) {}
-
 WrongAnimal::WrongAnimal(const WrongAnimal& obj) {
 	this->_type = obj._type;
+}
+
+WrongAnimal::WrongAnimal(const std::string& name) : _type(name) {
+	std::cout << "Parameterized Constructor WrongAnimal Called" << std::endl;
+
 }
 
 WrongAnimal& WrongAnimal::operator=(const WrongAnimal& rhs){

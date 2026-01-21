@@ -1,14 +1,12 @@
 #include "Cat.hpp"
 
-Cat::Cat() {
-	this->_type = "Cat";
+Cat::Cat() : Animal("Cat") {
 	std::cout << "Constructor Cat Called" << std::endl;
 }
 
-Cat::Cat(std::string name) : Animal(name) {}
+Cat::Cat(const std::string& name) : Animal(name) {}
 
 Cat::Cat(const Cat& obj) {
-	this->_type = "Cat";
 	this->_type = obj._type;
 }
 
