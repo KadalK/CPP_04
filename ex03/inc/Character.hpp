@@ -20,6 +20,4 @@ public:
 	virtual ~Character();
 };
 
-//std::ostream& operator<<(ostream& os, const Character& c);
-
 #endif
