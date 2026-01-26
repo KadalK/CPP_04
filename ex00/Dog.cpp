@@ -1,6 +1,6 @@
 #include "Dog.hpp"
 
-Dog::Dog() : Animal("Dog"){;
+Dog::Dog() : Animal("Dog"){
 	std::cout << "Constructor Dog Called" << std::endl;
 }
 

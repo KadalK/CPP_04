@@ -12,6 +12,8 @@ public:
 	Dog(const Dog& );
 	Dog(const std::string& name);
 	Dog& operator=(const Dog);
+	std::string getBrain(int idx) const;
+	void setBrain(int idx, std::string idea);
 
 	void makeSound() const;
 

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d623200b-87ff-48a0-9896-262a3e6c1ced" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ex00/Dog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex00/Dog.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex01/Brain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex01/Brain.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex01/Brain.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex01/Brain.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex01/Cat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex01/Cat.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex01/Cat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex01/Cat.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex01/Dog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex01/Dog.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex01/Dog.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex01/Dog.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex01/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ex01/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex01/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex01/main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="38cdvtALAHJ6QkBKv8TcDyAN4oy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d623200b-87ff-48a0-9896-262a3e6c1ced" name="Changes" comment="" />
+      <created>1769103030933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1769103030933</updated>
+      <workItem from="1769103038981" duration="834000" />
+      <workItem from="1769429351547" duration="10520000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
