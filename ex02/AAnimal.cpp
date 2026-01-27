@@ -21,5 +21,5 @@ std::string AAnimal::getType() const {
 }
 
 AAnimal::~AAnimal() {
-	std::cout << "DestructorAAnimal Called" << std::endl;
+	std::cout << "Destructor AAnimal Called" << std::endl;
 }

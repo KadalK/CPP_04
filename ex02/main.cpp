@@ -7,6 +7,7 @@
 
 int main()
 {
+	std::cout << "\n=================Subject Test=================" << std::endl;
 	const AAnimal* i = new Cat();
 	const AAnimal* j = new Dog();
 	const WrongAnimal* wi = new WrongCat();
@@ -22,6 +23,19 @@ int main()
 	delete wi;
 	delete wj;
 
+	std::cout << "\n=================Mendatory Test=================" << std::endl;
+	AAnimal* array[10];
+	for (int i = 0; i < 10; i++)
+	{
+		if (i < 5)
+			array[i] = new Cat();
+		else
+			array[i] = new Dog();
+	}
+
+	std::cout << std::endl;
+	for (int i = 0; i < 10; i++)
+		delete array[i];
 
 	std::cout << "\n=================Optional Test=================" << std::endl;
 	Dog* truc = new Dog;

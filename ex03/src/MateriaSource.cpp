@@ -7,8 +7,28 @@ MateriaSource::MateriaSource() {
 		this->_learned[i] = NULL;
 }
 
+MateriaSource::MateriaSource(const MateriaSource& copy){
+	*this = copy;
+}
+
+MateriaSource& MateriaSource::operator=(const MateriaSource& rhs){
+	if (this != &rhs)
+	{
+		for (int i = 0; i < 4; i++)
+		{
+			if (this->_learned[i] != NULL)
+				delete this->_learned[i];
+			this->_learned[i] = rhs._learned[i]->clone();
+		}
+	}
+	return (*this);
+}
+
 void MateriaSource::learnMateria(AMateria* learn)
 {
+	if (!learn)
+		return ;
+
 	for (int i = 0; i < 4 ; i++)
 	{
 		if (this->_learned[i] == NULL)
