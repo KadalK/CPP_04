@@ -9,7 +9,8 @@ private:
 public:
 	Brain();
 	Brain(const Brain& );
-	Brain operator=(const Brain);
+	Brain operator=(const Brain&);
+
 	const std::string getIdeas(int idx) const;
 	void setIdeas(int idx, std::string idea);
 

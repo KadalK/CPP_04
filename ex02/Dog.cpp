@@ -23,8 +23,15 @@ void Dog::makeSound() const {
 	std::cout << "Woof~ Snoop Doogy Doug" << std::endl;
 }
 
+std::string Dog::getBrain(int idx) const {
+	return (this->_brain->getIdeas(idx));
+}
+
+void Dog::setBrain(int idx, std::string idea) {
+	this->_brain->setIdeas(idx, idea);
+}
 
 Dog::~Dog() {
-	delete this->_brain;
 	std::cout << "Destructor Dog Called" << std::endl;
+	delete this->_brain;
 }

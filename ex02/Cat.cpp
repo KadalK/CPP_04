@@ -23,7 +23,16 @@ void Cat::makeSound() const {
 	std::cout << "Mew~ Snoop Caty Doug" << std::endl;
 }
 
+std::string Cat::getBrain(int idx) const {
+	return (this->_brain->getIdeas(idx));
+}
+
+void Cat::setBrain(int idx, std::string idea)
+{
+	this->_brain->setIdeas(idx, idea);
+}
+
 Cat::~Cat() {
-	delete this->_brain;
 	std::cout << "Destructor Cat Called" << std::endl;
+	delete this->_brain;
 }

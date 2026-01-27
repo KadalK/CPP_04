@@ -11,7 +11,7 @@ Dog::Dog(const Dog& obj) {
 	this->_type = obj._type;
 }
 
-Dog& Dog::operator=(const Dog rhs){
+Dog& Dog::operator=(const Dog& rhs){
 	if (this != &rhs)
 		this->_type = rhs._type;
 	return *this;

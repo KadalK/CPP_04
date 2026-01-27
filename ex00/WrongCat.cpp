@@ -13,7 +13,7 @@ WrongCat::WrongCat(const WrongCat& obj) {
 
 WrongCat::WrongCat(const std::string& name) : WrongAnimal(name) {}
 
-WrongCat& WrongCat::operator=(const WrongCat rhs){
+WrongCat& WrongCat::operator=(const WrongCat& rhs){
 	if (this != &rhs)
 		this->_type = rhs._type;
 	return *this;

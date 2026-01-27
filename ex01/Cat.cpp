@@ -14,7 +14,7 @@ Cat::Cat(const std::string& name) : Animal(name) {
 	this->_brain = new Brain();
 }
 
-Cat& Cat::operator=(const Cat rhs){
+Cat& Cat::operator=(const Cat& rhs){
 	if (this != &rhs)
 	{
 		delete this->_brain;
@@ -27,6 +27,7 @@ Cat& Cat::operator=(const Cat rhs){
 void Cat::makeSound() const {
 	std::cout << "Mew~ Snoop Caty Doug" << std::endl;
 }
+
 std::string Cat::getBrain(int idx) const {
 	return (this->_brain->getIdeas(idx));
 }

@@ -12,7 +12,7 @@ Animal::Animal(const std::string& name) : _type(name) {
 	std::cout << "Parameterized Constructor Animal Called" << std::endl;
 }
 
-Animal& Animal::operator=(const Animal rhs){
+Animal& Animal::operator=(const Animal& rhs){
 	if (this != &rhs)
 		this->_type = rhs._type;
 	return *this;

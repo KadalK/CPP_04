@@ -8,7 +8,7 @@ public:
 	Dog();
 	Dog(const Dog& );
 	Dog(const std::string& name);
-	Dog& operator=(const Dog);
+	Dog& operator=(const Dog&);
 
 	void makeSound() const;
 

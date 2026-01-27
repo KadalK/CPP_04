@@ -10,7 +10,7 @@ Cat::Cat(const Cat& obj) {
 	this->_type = obj._type;
 }
 
-Cat& Cat::operator=(const Cat rhs){
+Cat& Cat::operator=(const Cat& rhs){
 	if (this != &rhs)
 		this->_type = rhs._type;
 	return *this;

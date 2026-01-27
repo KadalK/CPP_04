@@ -12,7 +12,10 @@ public:
 	Dog(const Dog& );
 	Dog& operator=(const Dog&);
 	void makeSound() const;
-	Brain* getBrain() const { return _brain; }
+
+	std::string getBrain(int idx) const;
+	void setBrain(int idx, std::string idea);
+
 	~Dog();
 };
 

@@ -12,6 +12,10 @@ public:
 	Cat(const Cat&);
 	Cat& operator=(const Cat&);
 	void makeSound() const;
+
+	std::string getBrain(int idx) const;
+	void setBrain(int idx, std::string idea);
+
 	~Cat();
 };
 

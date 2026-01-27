@@ -11,11 +11,11 @@ public:
 	Dog();
 	Dog(const Dog& );
 	Dog(const std::string& name);
-	Dog& operator=(const Dog);
+	Dog& operator=(const Dog&);
+	void makeSound() const;
+
 	std::string getBrain(int idx) const;
 	void setBrain(int idx, std::string idea);
-
-	void makeSound() const;
 
 	~Dog();
 };

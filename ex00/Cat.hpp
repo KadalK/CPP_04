@@ -8,7 +8,7 @@ public:
 	Cat();
 	Cat(const Cat& );
 	Cat(const std::string& name);
-	Cat& operator=(const Cat);
+	Cat& operator=(const Cat&);
 
 	void makeSound() const;
 

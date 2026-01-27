@@ -7,7 +7,7 @@ Brain::Brain(const Brain& obj){
 		this->_ideas[i] = obj._ideas[i];
 }
 
-Brain Brain::operator=(const Brain rhs) {
+Brain Brain::operator=(const Brain& rhs) {
 	if (this != &rhs)
 	{
 		for (int i = 0; i < 100; i++)
@@ -23,8 +23,5 @@ const std::string Brain::getIdeas(int idx) const{
 void Brain::setIdeas(int idx, std::string idea) {
 	this->_ideas[idx] = idea;
 }
-
-
-
 
 Brain::~Brain() {}

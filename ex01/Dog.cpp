@@ -14,7 +14,7 @@ Dog::Dog(const std::string& name) : Animal(name) {
 	this->_brain = new Brain();
 }
 
-Dog& Dog::operator=(const Dog rhs){
+Dog& Dog::operator=(const Dog& rhs){
 	if (this != &rhs)
 	{
 		delete this->_brain;

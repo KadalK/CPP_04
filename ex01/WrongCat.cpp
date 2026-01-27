@@ -12,7 +12,7 @@ WrongCat::WrongCat(const WrongCat& obj) {
 	this->_type = obj._type;
 }
 
-WrongCat& WrongCat::operator=(const WrongCat rhs) {
+WrongCat& WrongCat::operator=(const WrongCat& rhs) {
 	if (this != &rhs)
 		this->_type = rhs._type;
 	return *this;

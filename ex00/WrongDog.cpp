@@ -9,7 +9,7 @@ WrongDog::WrongDog(const WrongDog& obj) {
 	this->_type = obj._type;
 }
 
-WrongDog& WrongDog::operator=(const WrongDog rhs){
+WrongDog& WrongDog::operator=(const WrongDog& rhs){
 	if (this != &rhs)
 		this->_type = rhs._type;
 	return *this;
