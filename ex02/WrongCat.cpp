@@ -9,7 +9,6 @@ WrongCat::WrongCat() : WrongAnimal("WrongCat") {
 WrongCat::WrongCat(const std::string& name) : WrongAnimal(name) {}
 
 WrongCat::WrongCat(const WrongCat& obj) {
-	this->_type = "WrongCat";
 	this->_type = obj._type;
 }
 

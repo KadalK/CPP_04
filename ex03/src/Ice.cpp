@@ -15,9 +15,7 @@ AMateria* Ice::clone() const{
 Ice& Ice::operator=(const Ice& rhs)
 {
 	if (this != &rhs)
-	{
 		this->_type = rhs._type;
-	}
 	return *this;
 }
 

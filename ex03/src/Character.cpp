@@ -5,16 +5,12 @@
 
 Character::Character() {
 	for(int i = 0 ; i < 4; i++)
-	{
 		this->_inventory[i] = NULL;
-	}
 }
 
 Character::Character(const std::string& name) : _name(name) {
 	for(int i = 0 ; i < 4; i++)
-	{
 		this->_inventory[i] = NULL;
-	}
 }
 
 Character::Character(const Character& copy) {

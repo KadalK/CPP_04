@@ -7,7 +7,6 @@ WrongCat::WrongCat() : WrongAnimal("WrongCat") {
 }
 
 WrongCat::WrongCat(const WrongCat& obj) {
-	this->_type = "WrongCat";
 	this->_type = obj._type;
 }
 
