@@ -40,14 +40,19 @@ Character& Character::operator=(const Character& rhs) {
 
 void Character::equip(AMateria* m){
 
-	if (!m){
-		std::cout << "No materia to equip\n";
+	if (!m) {
+		std::cout << "No materia to equip " << std::endl;
 		return ;
 	}
 
 	for (int i = 0; i < 4; i++)
 	{
-		if (_inventory[i] == NULL)
+		if (this->_inventory[i] == m)
+		{
+			std::cout << "U are cringe, it's already equipe in slot " << i << std::endl;
+			return ;
+		}
+		if (!this->_inventory[i])
 		{
 			_inventory[i] = m;
 			std::cout << "Materia equip in slot " << i << std::endl;
@@ -60,6 +65,11 @@ void Character::equip(AMateria* m){
 
 void Character::unequip(int idx)
 {
+	if (_inventory[idx] == NULL)
+	{
+
+		return ;
+	}
 	_inventory[idx] = NULL;
 	std::cout << "Materia unequip the slot " << idx << std::endl;
 }

@@ -23,7 +23,7 @@ Ice& Ice::operator=(const Ice& rhs)
 
 void Ice::use(ICharacter& target)
 {
-	std::cout << "* shoots an ice bolt at bob at " << target.getName() << " *" << std::endl;
+	std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
 }
 
 Ice::~Ice() {}

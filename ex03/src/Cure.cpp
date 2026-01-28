@@ -16,9 +16,7 @@ AMateria* Cure::clone() const{
 Cure& Cure::operator=(const Cure& rhs)
 {
 	if (this != &rhs)
-	{
 		this->_type = rhs._type;
-	}
 	return *this;
 }
 

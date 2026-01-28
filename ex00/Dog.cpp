@@ -7,7 +7,6 @@ Dog::Dog() : Animal("Dog"){
 Dog::Dog(const std::string& name) : Animal(name) {}
 
 Dog::Dog(const Dog& obj) {
-	this->_type = "Dog";
 	this->_type = obj._type;
 }
 
